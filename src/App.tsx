@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Github, Linkedin, Code, Cloud, Database } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin, Code, Cloud, Database, ExternalLink, Folder } from 'lucide-react';
 
 function App() {
   return (
@@ -125,8 +125,71 @@ function App() {
               </div>
             </div>
 
+            {/* Portfolio Section */}
+            <div className="animate-slide-up" style={{ animationDelay: '1s' }}>
+              <h3 className="text-2xl font-bold font-sans text-white mb-6">Portfolio</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Project Card 1 */}
+                <div className="group relative bg-gradient-to-br from-purple-900/40 to-indigo-900/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20 hover:border-purple-400/40 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 transform hover:-translate-y-2 animate-scale-in" style={{ animationDelay: '1.1s' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-indigo-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Folder className="w-6 h-6 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold font-sans text-white mb-3 group-hover:text-purple-300 transition-colors duration-300">E-Commerce Platform</h4>
+                    <p className="text-gray-300 font-serif mb-6 leading-relaxed">Full-stack web application built with React and Node.js, featuring user authentication, payment processing, and real-time inventory management.</p>
+                    <a
+                      href="#"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold font-sans px-4 py-2 rounded-lg hover:from-purple-400 hover:to-indigo-400 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 transform hover:scale-105"
+                    >
+                      <span>View Project</span>
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+
+                {/* Project Card 2 */}
+                <div className="group relative bg-gradient-to-br from-emerald-900/40 to-teal-900/40 backdrop-blur-sm rounded-2xl p-6 border border-emerald-500/20 hover:border-emerald-400/40 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 transform hover:-translate-y-2 animate-scale-in" style={{ animationDelay: '1.2s' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/5 to-teal-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Cloud className="w-6 h-6 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold font-sans text-white mb-3 group-hover:text-emerald-300 transition-colors duration-300">AWS Serverless API</h4>
+                    <p className="text-gray-300 font-serif mb-6 leading-relaxed">Scalable REST API using AWS Lambda, API Gateway, and DynamoDB. Handles 10,000+ requests per minute with automatic scaling and monitoring.</p>
+                    <a
+                      href="#"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold font-sans px-4 py-2 rounded-lg hover:from-emerald-400 hover:to-teal-400 transition-all duration-300 shadow-lg hover:shadow-emerald-500/25 transform hover:scale-105"
+                    >
+                      <span>View Project</span>
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+
+                {/* Project Card 3 */}
+                <div className="group relative bg-gradient-to-br from-orange-900/40 to-red-900/40 backdrop-blur-sm rounded-2xl p-6 border border-orange-500/20 hover:border-orange-400/40 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/10 transform hover:-translate-y-2 animate-scale-in md:col-span-2 lg:col-span-1" style={{ animationDelay: '1.3s' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-red-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Database className="w-6 h-6 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold font-sans text-white mb-3 group-hover:text-orange-300 transition-colors duration-300">ML Data Pipeline</h4>
+                    <p className="text-gray-300 font-serif mb-6 leading-relaxed">Python-based machine learning pipeline for predictive analytics, processing 1M+ data points daily with automated model retraining and deployment.</p>
+                    <a
+                      href="#"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold font-sans px-4 py-2 rounded-lg hover:from-orange-400 hover:to-red-400 transition-all duration-300 shadow-lg hover:shadow-orange-500/25 transform hover:scale-105"
+                    >
+                      <span>View Project</span>
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Call to Action */}
-            <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 text-center shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 animate-scale-in" style={{ animationDelay: '1.3s' }}>
+            <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 text-center shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 animate-scale-in" style={{ animationDelay: '1.4s' }}>
               <h3 className="text-2xl font-bold font-sans text-white mb-4">Let's Collaborate</h3>
               <p className="text-cyan-100 font-serif mb-6">
                 Ready to work on your next project? I'd love to discuss how we can create something amazing together.
@@ -144,7 +207,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900/80 backdrop-blur-sm py-8 border-t border-gray-700/50 animate-fade-in" style={{ animationDelay: '1.5s' }}>
+      <footer className="bg-gray-900/80 backdrop-blur-sm py-8 border-t border-gray-700/50 animate-fade-in" style={{ animationDelay: '1.6s' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-400 font-serif">
             © 2025 Vyom Raj. Crafted with passion and code.
