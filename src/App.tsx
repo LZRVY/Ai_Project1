@@ -105,6 +105,28 @@ function App() {
             </div>
 
             {/* Call to Action */}
+            {/* My Interests */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">My Interests</h3>
+              <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 shadow-md border border-blue-100">
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-lg">Reading about AI and machine learning</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-lg">Learning new programming languages</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-lg">Hiking</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Call to Action */}
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Let's Collaborate</h3>
               <p className="text-blue-100 mb-6">
